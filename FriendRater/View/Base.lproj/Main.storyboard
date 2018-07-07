@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="xsx-4j-kbX" detailTextLabel="ghH-Rc-8dn" style="IBUITableViewCellStyleValue1" id="Ghz-CN-MDX">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" textLabel="xsx-4j-kbX" detailTextLabel="ghH-Rc-8dn" style="IBUITableViewCellStyleValue1" id="Ghz-CN-MDX">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ghz-CN-MDX" id="gRp-aR-wUE">
@@ -79,10 +79,10 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="U1O-8z-82o">
-                                <rect key="frame" x="40" y="437" width="295" height="80"/>
+                                <rect key="frame" x="20" y="437" width="335" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Rating)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIN-kr-KRG">
-                                        <rect key="frame" x="117" y="0.0" width="61" height="30"/>
+                                        <rect key="frame" x="137" y="0.0" width="61" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="ZE2-AG-GCg"/>
@@ -91,10 +91,10 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="W06-Ky-X5q">
-                                        <rect key="frame" x="-2" y="50" width="299" height="31"/>
-                                        <color key="minimumTrackTintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="maximumTrackTintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="W06-Ky-X5q">
+                                        <rect key="frame" x="-2" y="50" width="339" height="31"/>
+                                        <color key="minimumTrackTintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="sliderDidChange:" destination="B8j-Eb-Q5B" eventType="valueChanged" id="ZrG-Ra-Owk"/>
                                         </connections>
@@ -108,10 +108,10 @@
                         <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="tfl-HZ-2aI" firstAttribute="trailing" secondItem="fvG-Ee-sXP" secondAttribute="trailing" constant="16" id="4Vv-o1-Pjn"/>
-                            <constraint firstItem="tfl-HZ-2aI" firstAttribute="trailing" secondItem="U1O-8z-82o" secondAttribute="trailing" constant="40" id="YwR-ZL-6xs"/>
+                            <constraint firstItem="tfl-HZ-2aI" firstAttribute="trailing" secondItem="U1O-8z-82o" secondAttribute="trailing" constant="20" id="YwR-ZL-6xs"/>
                             <constraint firstItem="fvG-Ee-sXP" firstAttribute="top" secondItem="tfl-HZ-2aI" secondAttribute="top" constant="80" id="bOt-fE-Ogf"/>
                             <constraint firstItem="fvG-Ee-sXP" firstAttribute="leading" secondItem="tfl-HZ-2aI" secondAttribute="leading" constant="16" id="qnz-II-q19"/>
-                            <constraint firstItem="U1O-8z-82o" firstAttribute="leading" secondItem="tfl-HZ-2aI" secondAttribute="leading" constant="40" id="uhN-y7-Jvk"/>
+                            <constraint firstItem="U1O-8z-82o" firstAttribute="leading" secondItem="tfl-HZ-2aI" secondAttribute="leading" constant="20" id="uhN-y7-Jvk"/>
                             <constraint firstItem="tfl-HZ-2aI" firstAttribute="bottom" secondItem="U1O-8z-82o" secondAttribute="bottom" constant="150" id="xZV-h9-1T1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tfl-HZ-2aI"/>

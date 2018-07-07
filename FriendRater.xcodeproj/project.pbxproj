@@ -14,6 +14,7 @@
 		B639F49B20F1249D00B15727 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639F49A20F1249D00B15727 /* FriendsTableViewController.swift */; };
 		B639F49D20F125A700B15727 /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639F49C20F125A700B15727 /* FriendDetailViewController.swift */; };
 		B639F49F20F12C8700B15727 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639F49E20F12C8700B15727 /* Friend.swift */; };
+		B639F4A120F12FAE00B15727 /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639F4A020F12FAE00B15727 /* FriendController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B639F49A20F1249D00B15727 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		B639F49C20F125A700B15727 /* FriendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
 		B639F49E20F12C8700B15727 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		B639F4A020F12FAE00B15727 /* FriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		B639F49920F11E8200B15727 /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
+				B639F4A020F12FAE00B15727 /* FriendController.swift */,
 			);
 			path = ModelController;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			files = (
 				B639F49B20F1249D00B15727 /* FriendsTableViewController.swift in Sources */,
 				B639F49F20F12C8700B15727 /* Friend.swift in Sources */,
+				B639F4A120F12FAE00B15727 /* FriendController.swift in Sources */,
 				B639F48320F11E1000B15727 /* AppDelegate.swift in Sources */,
 				B639F49D20F125A700B15727 /* FriendDetailViewController.swift in Sources */,
 			);
