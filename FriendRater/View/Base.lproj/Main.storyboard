@@ -64,7 +64,7 @@
             </objects>
             <point key="canvasLocation" x="407" y="-4"/>
         </scene>
-        <!--(Friend Name)-->
+        <!--Friend-->
         <scene sceneID="n0Y-3I-IaD">
             <objects>
                 <viewController id="B8j-Eb-Q5B" customClass="FriendDetailViewController" customModule="FriendRater" customModuleProvider="target" sceneMemberID="viewController">
@@ -82,9 +82,10 @@
                                 <rect key="frame" x="20" y="437" width="335" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Rating)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIN-kr-KRG">
-                                        <rect key="frame" x="137" y="0.0" width="61" height="30"/>
+                                        <rect key="frame" x="137.5" y="0.0" width="60" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="66M-Bn-jdh"/>
                                             <constraint firstAttribute="height" constant="30" id="ZE2-AG-GCg"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -102,6 +103,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="W06-Ky-X5q" firstAttribute="width" secondItem="U1O-8z-82o" secondAttribute="width" id="IUv-gD-6v6"/>
+                                    <constraint firstItem="fIN-kr-KRG" firstAttribute="centerX" secondItem="U1O-8z-82o" secondAttribute="centerX" id="zpd-ip-7Lu"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -116,7 +118,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tfl-HZ-2aI"/>
                     </view>
-                    <navigationItem key="navigationItem" title="(Friend Name)" id="P9a-Sb-e0I">
+                    <navigationItem key="navigationItem" title="Friend" id="P9a-Sb-e0I">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="xyt-V5-fsQ">
                             <connections>
                                 <action selector="saveButtonTapped:" destination="B8j-Eb-Q5B" id="yaO-2H-Kqk"/>
@@ -153,6 +155,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="NMq-gR-U9u"/>
+        <segue reference="ZxM-Xg-pXw"/>
     </inferredMetricsTieBreakers>
 </document>

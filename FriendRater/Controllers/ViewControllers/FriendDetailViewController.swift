@@ -16,6 +16,7 @@ class FriendDetailViewController: UIViewController {
         ratingSlider.minimumValueImage = thumbsDownImage
         ratingSlider.maximumValueImage = thumbsUpImage
         ratingLabel.text = "\(0)"
+        updateViews()
     }
     
     // MARK: - Outlets
@@ -32,18 +33,31 @@ class FriendDetailViewController: UIViewController {
     
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
         guard let friendName = friendNameTextField.text, !friendName.isEmpty, friendName != " ", let ratingLabelText = ratingLabel.text, let rating = Int(ratingLabelText) else { return }
-        FriendController.shared.createNewFriend(with: friendName, rating: rating)
+        if let friend = friend {
+            FriendController.shared.updateFriend(friend: friend, with: friendName, rating: rating)
+        } else {
+            FriendController.shared.createNewFriend(with: friendName, rating: rating)
+        }
+        navigationController?.popViewController(animated: true)
     }
     
     // MARK: - Properties
+    var friend: Friend?
     let thumbsDownImage = "👎".image()
     let thumbsUpImage = "👍".image()
     
     // MARK: - Methods
-    
+    func updateViews() {
+        if let friend = friend {
+            title = friend.name
+            friendNameTextField.text = friend.name
+            ratingLabel.text = "\(friend.rating)"
+            ratingSlider.value = Float(friend.rating)
+        }
+    }
 }
 
-// MARK: - Convert Emojis into images
+// MARK: - Convert Emojis into Images via Extension
 extension String {
     func image() -> UIImage? {
         let size = CGSize(width: 40, height: 40)
@@ -57,3 +71,4 @@ extension String {
         return image
     }
 }
+

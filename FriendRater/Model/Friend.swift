@@ -11,7 +11,7 @@ import Foundation
 class Friend: Equatable, Codable {
     
     // MARK: - Properties
-    let name: String
+    var name: String
     var rating: Int
     
     // MARK: - Initializers
